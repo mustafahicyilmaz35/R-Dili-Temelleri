@@ -1,0 +1,34 @@
+
+	2x2 için kaynak = https://www.youtube.com/watch?v=PT8dVw4Av9M
+	3x3 matris için kaynak = https://www.youtube.com/watch?v=gSWXqEp8b44
+	3X3 matris için Cramer yöntemi kaynak = https://www.youtube.com/watch?v=Y6nOyvkwY_4
+
+
+	Ters Matris Yardýmýyla Denklem Çözümü:
+ 	
+
+        Ax = B olsun. Burada A katsayýlar matrisi, X bilinmeyenlerin olduðu vektör, B eþitliðin sað tarafýndaki deðer.
+	Burada bilinmeyeni yani x i bulmamýz gerekecek. Bu yüzden X i yalnýz býrakmalýyýz. x i yalnýz býrakmak için ise
+	eþitliðin her iki tarafýný A matrisinin tersi ile çarpmalýyýz.
+	Aters * Ax = Aters*B  -> Burada A ile Aters in çarpýmý birim matrise dönüþeceðinden etkisiz olacak.
+	Bu durumda formülün son hali -> x = Aters * B olacak 
+
+	Eðer 3x3 lük bir matris kullanacaksak önce minör matris oluþturmalýyýz. Sonra 
+	matrisin deðerleri + - + iþaretleriyle iþleme sokarak iþaretlerini yeniden belirlemeliyiz. Bu Cofactor
+   			   - + -
+                           + - +
+
+	matris olacak. Bu matrisin de transposunu almalýyýz. Bu Ad matrisimiz olacak.
+	Asýl matrisin tersi ise       1
+                                  ----------        Ad(Matrsi)
+				  Determinant Matris
+
+	Burada matrisin determinantýný bulurken matrisin elemanlarýný kendi sýrasýna denk gelen cofaktör
+	matrisin elemanýyla çarpýp sonucu toplamak olacak. Bunu sadece üst sýra için yapacaðýz.
+	
+	Cramer Yöntemi
+	Burada da önce katsayýlar matrisini alýyoruz. Ayný bilinmeyenin katsayýlarý ayný sütunda bulunmalý.Daha bu matrisin determinantý alýnmalý
+	(sarrus metodu ile çok pratik oluyor.) x1 i bulmak için B matrisindeki sütunu katsayýlar matrisindeki ilk sütuna yazýyoruz.(Orjinal matris
+	in ilk sütununu siliyoruz.) Sonra tekrar sarrus metodu ile determinantý alýyoruz ve bu determinantý gerçek determinanta bölünce x1 i
+	elde ediyoruz. b matrisinin sütununu orjinal matrisin ikinci sütununa yazýp ayný iþlemi yaparsak x2 yi, üçüncü sütuna yazýp ayný iþlemi
+	yaparsak x3 ü buluyoruz.
