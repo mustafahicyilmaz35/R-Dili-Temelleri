@@ -1,0 +1,84 @@
+
+
+	Kaynak: https://www.youtube.com/watch?v=hWEmDYgTB_k
+
+
+	Matrisler deðiþkenlerin bir dikdörten üzerinde gösterildiði yapýlardýr. Yatay olan taraf satýr, dikey olan taraf sütunlardýr.
+	m matris sayýsý n sütun sayýsýdýr. m satýr ve n sütun sayýsýndan sayýsýndan oluþan matrise mxn türünde bir matris denir.
+	Matrisleri bilgisayarlar kullanýr. Lineer denklemleri çözme, bilinmeyenleri bulma gibi iþlemleri yaparlar.
+	Matrisin herbir elemaný satýr ve sütun numarasýna göre isimlendirilir. B = (1,2,4,3) bu matrisin 1 tane satýrý 4
+	tane sütunu vardýr. bu 4x1 türünden bir matristir.
+	
+
+	2, 1  Bu matris de 3 satýr ve 2 sütuna sahiptir. 3x2 türünden bir matristir.
+	4, 5
+	6, 7    Burada 7 elemaný 3. satýr ve 2. sütunda bulunur a32 ile gösterilir.
+
+	Kare Matris -> Satýr ve sütun sayýsý birbirine eþit olan matristir. Soldan Saða olan Köþegenine asal(esas) köþegen denir. 
+	Saðdan sola doðru olan köþegenine yedek köþegen denir. Köþegen kavramý sadece kare matriste oluþur.
+	Esas köþgenin altýnda kalan deðerler 0 ise buna üst üçgen matris denir. Eðer üstünde kalan deðerler 0 ise alt üçgen
+	matris denir. Eðer köþegenin hem altýnda hem de üstünde kalan deðerler 0 ise buna köþegen matris denir. Deðerler sa
+	dece köþegende yer alýr. Kare matrisler içerisinde en önemli olan birim matristir.
+	
+	Birim matris : Esas köþegeni 1 diðer elemanlarý 0 olan matrislerdir. Matrislerdeki çarpma iþlemindeki etkisiz eleman
+	birim matristir. Birim matrisle çarpýlýrsa hiçbir þey deðiþmez.
+
+	Bir matrisin Transpozu:
+	Transpozu demek devriði demektir. Satýrlarla sütunlar yer deðiþtirecek. Örneðin 1 tane satýrý ve 3 tane sütunu
+	olan bir matrisin transpozunun 3 tane satýrý 1 tane sütunu olmalýdýr.
+
+	A = (2, -1, 3) Transposu -> 2 Burada satýrý sütuna, sütunu da satýra çevirdik
+				   -1
+				    3
+
+	-3, 2  Transpos -> Burada birinci satýr birinci sütuna, ikinci satýr ikinci sütuna dönüþecek  -3,-1
+	-1, 4											       2, 4
+
+	
+	Bir matrisin transposunun transposu yine kendisidir. A +(ya da -) B nin transposu = A nýn transposu
+	(artý ya da eksi) B nin transposu
+
+	Matrisler Dört Ýþlem(Aslýnda üç iþlem bölme iþlemi yok):
+	
+	Toplama ve Çýkarma sadece ayný türden matrisler üzerinde matematiksel iþlemler yapýlabilir.
+
+	2, 3, 4     7,8,9             Matrislerde toplama ve çýkarma iþlemlerinde karþýlýklý ayný terimler toplanýr ve matrise yazýlýr
+	5, 6, 7	    10,11,12		2+7 = 9 (Ýkiside kendi matrislerinde 1. satýr ve 1. sütuna denk geliyor
+	1, 2, 3     -1,2,1
+
+					9,11,13	
+                                        15,17,12       Her iki matrisin karþýlýký kendi posizyonundaki(satýr ve sütunlarýndaki)
+                                        0,4,4          deðerler toplanýr ve sonuç matrisinde ayný yere yerleþtiriliri.
+
+ Elde ettiðimiz sayýyý 2 ile toplamak istersek(Skaler 2 yani bildiðimiz 2) 2 yi az önce gördüðümüz birim matrisle çarparak bir matrise
+çevirmneliyiz.(Yani matris dünyasýna katmalýyýz.)
+
+	2x  1,0,0 = 2,0,0
+            0,1,0   0,2,0   Bu durumda 9,11,13	      2,0,0         11,11,13
+            0,0,1   0,0,2              15,17,12    +  0,2,0   =     15,19,12
+                                       0,4,4          0,0,2         0,4,6
+
+
+
+	Birim matris sadece karesel matriste olacaðý için, karesel olmayan bir matrisi skaler bir sayý ile toplayamayýz.
+
+	Matrislerde Çarpma Ýþlemi
+	
+	Ýki matrisin çarpýlabilmesi için birinci matrisin sütun sayýsý, ikinci matrisin satýr sayýsýna eþit olmalýdýr.
+	Amxn * Bnxr = Cmxr Burada görüldüðü gibi birinci matrisin satýr sayýsý ikinci matrisin sütun sayýsýna eþittir. Bunlar çarpýlabilir.
+	Oluþacak yeni matris satýr sayýsýný birinciden, sütun sayýsýný ikinciden alacaktýr.
+	Matrislerde AxB != BxA yani matris çarpmasýnda deðiþme özelliði yoktur.
+	A*B nin transposu = B nin Transposu * A nýn Transposu
+	Ýki matris çarpýlmaya baþlandýðýnda birinci matristen satýrlar, ikinci matristen sütunlar alýnýr.
+	
+
+	2,1,3    -2,1       Burada birinci matrisin satýrýný ikinci matrisin sütunu ile çarpýp sonuçlarý toplayacaðýz ve
+       -4,1,2 *   3,-1	    sonuç matrisinin 1. satýr 1. sütun elemanýný elde edeceðiz. (2*-2 + 1*3 + 3*0) = -1 (1. satýr 1. sütun)
+                  0,2        								(2*1 + 1*-1 + 3*2) = 7 (1. satýr 2. sütun)
+							                                 (-4*-2 + 1*3 + 2*0) = 11( 2. satýr 1. sütun)
+                                                                                         (-4*1 + 1*-1 + 2*2) = -1
+
+
+											Sonuç matrisi
+											-1,7
+            										 11,-1
