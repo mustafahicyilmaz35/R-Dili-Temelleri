@@ -1,0 +1,16 @@
+
+	Kaynakça: https://www.youtube.com/watch?v=c7IfhBQ2too	
+
+	Matrislerin Tersini Almak
+
+	Bir matrisi ne ile çarparsak bize birim elemanýný verir. Buradan yola çýkarak matrisin tersini alabiliriz.
+	
+	Matrisin tersini alýrken kullanabileceðimiz bir hazýr formül var
+
+		1        d, -c
+          ----------- * -b,  a   1/determinat(a.d-b.c -> determinantý veriyor) çarpý a,b,c,d birimlerinin çarpaz olarak yer deðiþtirmiþ hali(burada
+	   a.d -b.c              (b ile c yer deðiþtirken ayný zamanda iþaretleri de tam tersine dönüyor.)
+
+	
+
+	
